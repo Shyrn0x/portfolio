@@ -1,4 +1,3 @@
-
 export default function Home() {
   return (
     <>
@@ -9,15 +8,20 @@ export default function Home() {
         <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-gradient-to-tr from-green-400 via-blue-400 to-purple-400 opacity-20 rounded-full blur-3xl z-0 animate-pulse" />
 
         <div className="relative z-10 flex flex-col items-center gap-6">
-          <div className="w-36 h-36 rounded-full bg-gradient-to-tr from-blue-500 via-blue-700 to-purple-500 flex items-center justify-center text-white text-6xl font-extrabold shadow-xl border-4 border-white/40 dark:border-black/40 animate-fade-in">
-            ZA
+          <div className="w-36 h-36 rounded-full bg-gradient-to-tr from-blue-500 via-blue-700 to-purple-500 flex items-center justify-center shadow-xl border-4 border-white/40 dark:border-black/40 animate-fade-in overflow-hidden">
+            <img src="/pic.png" alt="Foto Zaidan Arrifqi" className="w-full h-full object-cover scale-125" />
           </div>
           <h1 className="text-5xl font-black text-gray-900 dark:text-white text-center tracking-tight animate-fade-in">Zaidan Arrifqi</h1>
           <p className="text-xl text-gray-700 dark:text-gray-200 text-center font-medium animate-fade-in">Programming Enthusiast | Junior Web Developer </p>
-          <p className="text-lg text-gray-500 dark:text-gray-400 text-center animate-fade-in">D3-Teknik Telekomunikasi</p>
           <div className="flex gap-4 mt-6 animate-fade-in">
-            <a href="/projects" className="px-7 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-blue-400 text-white font-bold shadow-lg hover:scale-105 hover:from-blue-700 hover:to-blue-500 transition-all duration-200">Lihat Project</a>
-            <a href="/blog" className="px-7 py-3 rounded-xl bg-gradient-to-r from-green-600 to-green-400 text-white font-bold shadow-lg hover:scale-105 hover:from-green-700 hover:to-green-500 transition-all duration-200">Blog & Dokumentasi</a>
+            <a href="/projects" className="px-8 py-3 rounded-full bg-white/10 backdrop-blur border border-blue-400 text-blue-600 font-bold shadow-lg flex items-center gap-2 hover:bg-blue-600 hover:text-white hover:shadow-xl transition-all duration-200 group">
+              <svg className="w-5 h-5 text-blue-500 group-hover:text-white transition" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4"/></svg>
+              Lihat Project
+            </a>
+            <a href="/blog" className="px-8 py-3 rounded-full bg-white/10 backdrop-blur border border-green-400 text-green-600 font-bold shadow-lg flex items-center gap-2 hover:bg-green-600 hover:text-white hover:shadow-xl transition-all duration-200 group">
+              <svg className="w-5 h-5 text-green-500 group-hover:text-white transition" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h7l5 5v11a2 2 0 01-2 2z"/></svg>
+              Blog & Dokumentasi
+            </a>
           </div>
         </div>
       </section>
