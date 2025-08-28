@@ -12,7 +12,7 @@ export default function ProjectsPage() {
               <span className="px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs font-bold">JavaScript</span>
               <span className="px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs font-bold">PHP</span>
               <span className="px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs font-bold">MQTT</span>
-              <span className="px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-xs font-bold">ESP32</span>
+              <span className="px-2 py-0.5 rounded-full bg-gray-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs font-bold">ESP32</span>
             </div>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Smart Feeder Ikan</h2>
             <p className="text-gray-600 dark:text-gray-300">Sistem IoT untuk pemberian makan ikan secara otomatis dan terjadwal. Dapat dikontrol melalui web dashboard dengan fitur atur jadwal, kontrol manual, dan monitoring status feeder.</p>

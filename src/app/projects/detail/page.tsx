@@ -48,34 +48,6 @@ export default function ProjectDetailPage() {
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto py-16 px-4">
-        {/* Project Gallery */}
-        <div className="mb-16">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">📸 Project Gallery</h2>
-            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Dokumentasi visual dari implementasi Smart Feeder Ikan
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-gray-200/50 dark:border-gray-700/50">
-              <img src="/feeder-aquarium.jpg" alt="Smart Feeder Setup" className="w-full h-64 object-cover rounded-xl mb-4 shadow-lg" />
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">🏠 Setup Aquarium</h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
-                Instalasi Smart Feeder pada aquarium dengan sistem kontainer pakan otomatis
-              </p>
-            </div>
-            
-            <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-gray-200/50 dark:border-gray-700/50">
-              <img src="/dashboard-feeder.jpeg" alt="Web Dashboard Smart Feeder" className="w-full h-64 object-cover rounded-xl mb-4 shadow-lg" />
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">💻 Web Dashboard</h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
-                Interface web responsif untuk kontrol dan monitoring sistem feeder
-              </p>
-            </div>
-          </div>
-        </div>
-
         {/* Project Description */}
         <div className="mb-16">
           <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-gray-200/50 dark:border-gray-700/50">
@@ -163,7 +135,131 @@ export default function ProjectDetailPage() {
           </div>
         </div>
 
-        {/* Video Demo Section */}
+        {/* Technical Specifications */}
+        <div className="mb-16">
+          <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-800/80 dark:to-cyan-900/20 rounded-2xl p-8 shadow-xl border border-blue-200/50 dark:border-blue-700/50">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-700 rounded-full flex items-center justify-center">
+                <span className="text-2xl">⚙️</span>
+              </div>
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Spesifikasi Teknis</h2>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">🔧 Komponen Hardware</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-center gap-3">
+                    <span className="w-3 h-3 bg-blue-500 rounded-full"></span>
+                    <div>
+                      <span className="text-gray-900 dark:text-white font-medium">ESP32 Development Board</span>
+                      <p className="text-xs text-gray-600 dark:text-gray-400">Mikrokontroler utama dengan WiFi built-in</p>
+                    </div>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="w-3 h-3 bg-cyan-500 rounded-full"></span>
+                    <div>
+                      <span className="text-gray-900 dark:text-white font-medium">Servo Motor SG90</span>
+                      <p className="text-xs text-gray-600 dark:text-gray-400">Aktuator untuk mekanisme pakan</p>
+                    </div>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="w-3 h-3 bg-blue-500 rounded-full"></span>
+                    <div>
+                      <span className="text-gray-900 dark:text-white font-medium">Wadah Pakan Otomatis</span>
+                      <p className="text-xs text-gray-600 dark:text-gray-400">Kontainer dengan sistem dispensing</p>
+                    </div>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="w-3 h-3 bg-cyan-500 rounded-full"></span>
+                    <div>
+                      <span className="text-gray-900 dark:text-white font-medium">Power Supply 5V</span>
+                      <p className="text-xs text-gray-600 dark:text-gray-400">Adaptor untuk daya sistem</p>
+                    </div>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="w-3 h-3 bg-blue-500 rounded-full"></span>
+                    <div>
+                      <span className="text-gray-900 dark:text-white font-medium">Jumper Wires</span>
+                      <p className="text-xs text-gray-600 dark:text-gray-400">Kabel penghubung komponen</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">💻 Software & Tools</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-center gap-3">
+                    <span className="w-3 h-3 bg-cyan-500 rounded-full"></span>
+                    <div>
+                      <span className="text-gray-900 dark:text-white font-medium">Arduino IDE/PlatformIO</span>
+                      <p className="text-xs text-gray-600 dark:text-gray-400">Programming ESP32 microcontroller</p>
+                    </div>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="w-3 h-3 bg-blue-500 rounded-full"></span>
+                    <div>
+                      <span className="text-gray-900 dark:text-white font-medium">PHP Backend</span>
+                      <p className="text-xs text-gray-600 dark:text-gray-400">Server-side logic dan API</p>
+                    </div>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="w-3 h-3 bg-cyan-500 rounded-full"></span>
+                    <div>
+                      <span className="text-gray-900 dark:text-white font-medium">JavaScript Frontend</span>
+                      <p className="text-xs text-gray-600 dark:text-gray-400">Web dashboard interface</p>
+                    </div>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="w-3 h-3 bg-blue-500 rounded-full"></span>
+                    <div>
+                      <span className="text-gray-900 dark:text-white font-medium">MQTT Broker</span>
+                      <p className="text-xs text-gray-600 dark:text-gray-400">Protokol komunikasi IoT</p>
+                    </div>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="w-3 h-3 bg-cyan-500 rounded-full"></span>
+                    <div>
+                      <span className="text-gray-900 dark:text-white font-medium">C++</span>
+                      <p className="text-xs text-gray-600 dark:text-gray-400">Arduino programming language</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Project Gallery */}
+        <div className="mb-16">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">📸 Project Gallery</h2>
+            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              Dokumentasi visual dari implementasi Smart Feeder Ikan
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-gray-200/50 dark:border-gray-700/50">
+              <img src="/feeder-aquarium.jpg" alt="Smart Feeder Setup" className="w-full h-64 object-cover rounded-xl mb-4 shadow-lg" />
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">🏠 Setup Aquarium</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">
+                Instalasi Smart Feeder pada aquarium dengan sistem kontainer pakan otomatis
+              </p>
+            </div>
+            
+            <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-gray-200/50 dark:border-gray-700/50">
+              <img src="/dashboard-feeder.jpeg" alt="Web Dashboard Smart Feeder" className="w-full h-64 object-cover rounded-xl mb-4 shadow-lg" />
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">💻 Web Dashboard</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">
+                Interface web responsif untuk kontrol dan monitoring sistem feeder
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Demo Video Section */}
         <div className="mb-16">
           <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-gray-200/50 dark:border-gray-700/50">
             <div className="text-center mb-8">
@@ -197,64 +293,6 @@ export default function ProjectDetailPage() {
                   </div>
                 </div>
               )}
-            </div>
-          </div>
-        </div>
-
-        {/* Technical Specifications */}
-        <div className="mb-16">
-          <div className="bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800/80 dark:to-blue-900/20 rounded-2xl p-8 shadow-xl border border-gray-200/50 dark:border-gray-700/50">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center">
-                <span className="text-2xl">⚙️</span>
-              </div>
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Spesifikasi Teknis</h2>
-            </div>
-            
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">🔧 Hardware</h3>
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                    <span className="text-gray-700 dark:text-gray-300">ESP32 Development Board</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                    <span className="text-gray-700 dark:text-gray-300">Servo Motor SG90</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                    <span className="text-gray-700 dark:text-gray-300">Wadah Pakan Otomatis</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                    <span className="text-gray-700 dark:text-gray-300">Power Supply 5V</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">💻 Software</h3>
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                    <span className="text-gray-700 dark:text-gray-300">Arduino IDE/PlatformIO</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                    <span className="text-gray-700 dark:text-gray-300">PHP Backend</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                    <span className="text-gray-700 dark:text-gray-300">JavaScript Frontend</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                    <span className="text-gray-700 dark:text-gray-300">MQTT Broker</span>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>

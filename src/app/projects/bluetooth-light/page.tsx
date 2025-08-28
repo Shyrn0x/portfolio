@@ -324,6 +324,16 @@ export default function BluetoothLightPage() {
               </p>
             </div>
           </div>
+        </div>
+
+        {/* Demo Video Section */}
+        <div className="mb-16">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">🎥 Demo Video</h2>
+            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              Video demonstrasi sistem pengendali lampu Bluetooth dalam aksi
+            </p>
+          </div>
           
           {/* Video Sections */}
           <div className="grid md:grid-cols-2 gap-8">
