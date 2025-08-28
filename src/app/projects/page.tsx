@@ -17,7 +17,7 @@ export default function ProjectsPage() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Smart Feeder Ikan</h2>
             <p className="text-gray-600 dark:text-gray-300">Sistem IoT untuk pemberian makan ikan secara otomatis dan terjadwal. Dapat dikontrol melalui web dashboard dengan fitur atur jadwal, kontrol manual, dan monitoring status feeder.</p>
             <div className="flex gap-2 mt-2">
-              <a href="/projects/detail" className="inline-block px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-blue-400 text-white font-semibold shadow hover:scale-105 hover:from-blue-700 hover:to-blue-500 transition-all text-sm">Lihat detail</a>
+              <a href="/projects/feeder" className="inline-block px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-blue-400 text-white font-semibold shadow hover:scale-105 hover:from-blue-700 hover:to-blue-500 transition-all text-sm">Lihat detail</a>
               <a href="https://github.com/Shyrn0x/Feeder_IoT" target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 rounded-lg border border-blue-400 text-blue-700 dark:text-blue-300 font-semibold hover:bg-blue-50 dark:hover:bg-blue-900 transition-all text-sm">GitHub</a>
             </div>
           </div>
