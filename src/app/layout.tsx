@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import "./globals.css";
 
 const geistSans = Geist({
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </header>
   <main className="flex-1 flex flex-col w-full max-w-5xl mx-auto px-2 sm:px-6 md:px-8">{children}</main>
   <footer className="w-full py-6 text-gray-400 text-xs text-center bg-transparent">&copy; {new Date().getFullYear()} Zaidan Arrifqi. All rights reserved.</footer>
+        <SpeedInsights />
       </body>
     </html>
   );
