@@ -1,6 +1,13 @@
 'use client';
 
+import { useState, useEffect } from 'react';
+
 export default function ProjectDetailPage() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-cyan-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       {/* Hero Section */}
@@ -35,9 +42,6 @@ export default function ProjectDetailPage() {
             <a href="https://github.com/Shyrn0x/Feeder_IoT" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-white text-blue-600 rounded-xl font-semibold hover:bg-gray-100 transition-all shadow-lg">
               💻 View Code
             </a>
-            <button className="px-6 py-3 bg-white/20 backdrop-blur-sm text-white rounded-xl font-semibold hover:bg-white/30 transition-all">
-              📋 Live Demo
-            </button>
           </div>
         </div>
       </div>
@@ -63,9 +67,7 @@ export default function ProjectDetailPage() {
             </div>
             
             <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-gray-200/50 dark:border-gray-700/50">
-              <div className="w-full h-64 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-xl mb-4 flex items-center justify-center shadow-lg">
-                <div className="text-white text-6xl">📱</div>
-              </div>
+              <img src="/dashboard-feeder.jpeg" alt="Web Dashboard Smart Feeder" className="w-full h-64 object-cover rounded-xl mb-4 shadow-lg" />
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">💻 Web Dashboard</h3>
               <p className="text-gray-600 dark:text-gray-300 text-sm">
                 Interface web responsif untuk kontrol dan monitoring sistem feeder
@@ -177,16 +179,24 @@ export default function ProjectDetailPage() {
             </div>
             
             <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-black">
-              <video 
-                controls
-                preload="metadata"
-                className="w-full max-h-96 object-cover" 
-                poster="/feeder-aquarium.jpg"
-                key="demo-video"
-              >
-                <source src="/feeder-test.mp4" type="video/mp4" />
-                <p>Browser Anda tidak mendukung video.</p>
-              </video>
+              {isClient ? (
+                <video 
+                  controls
+                  preload="metadata"
+                  className="w-full max-h-96 object-cover" 
+                  poster="/feeder-aquarium.jpg"
+                >
+                  <source src="/feeder-test.mp4" type="video/mp4" />
+                  <p>Browser Anda tidak mendukung video.</p>
+                </video>
+              ) : (
+                <div className="w-full h-96 bg-gray-800 flex items-center justify-center rounded-xl">
+                  <div className="text-white text-center">
+                    <div className="text-4xl mb-2">🎥</div>
+                    <p>Loading video...</p>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -254,7 +264,7 @@ export default function ProjectDetailPage() {
           <div className="bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl p-8 text-white shadow-xl">
             <h3 className="text-2xl font-bold mb-4">🚀 Tertarik dengan Project Ini?</h3>
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Lihat kode lengkap di GitHub atau hubungi saya untuk diskusi lebih lanjut tentang implementasi IoT
+              Lihat kode lengkap di GitHub atau jelajahi lebih banyak project saya lainnya!
             </p>
             <div className="flex justify-center gap-4">
               <a href="https://github.com/Shyrn0x/Feeder_IoT" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-all">

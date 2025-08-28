@@ -18,7 +18,7 @@ export default function AboutPage() {
             <li><span className="font-semibold">Nama:</span> Zaidan Arrifqi</li>
             <li><span className="font-semibold">Asal:</span> Semarang, Indonesia</li>
             <li><span className="font-semibold">Prodi:</span> D3-Teknik Telekomunikasi</li>
-            <li><span className="font-semibold">Email:</span> <a href="mailto:zaidan@email.com" className="text-blue-600 dark:text-blue-400 hover:underline">zaidan@email.com</a></li>
+            <li><span className="font-semibold">Email:</span> <a href="mailto:zaidanarrifqi@email.com" className="text-blue-600 dark:text-blue-400 hover:underline">zaidanarrifqi@gmail.com</a></li>
             <li><span className="font-semibold">Linkedin:</span> <a href="linkedin.com/in/zaidan-arrifqi" className="text-blue-600 dark:text-blue-400 hover:underline">zaidan-arrifqi</a></li>
             <li><span className="font-semibold">GitHub:</span> <a href="github.com/Shyrn0x" className="text-blue-600 dark:text-blue-400 hover:underline">Shyrn0x</a></li>
           </ul>
