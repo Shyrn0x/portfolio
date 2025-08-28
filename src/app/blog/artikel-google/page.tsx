@@ -50,7 +50,7 @@ export default function ArtikelGooglePage() {
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Solusi Inovatif</h2>
             </div>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-              Untuk menjawab tantangan ini, saya mengusulkan <span className="font-bold text-green-700 dark:text-green-400">"Kurikulum Canvas Dinamis"</span>. Ini adalah platform visual berbasis Gemini tempat dosen dan pimpinan prodi berkolaborasi merancang kurikulum. Dibantu AI yang menganalisis feedback mahasiswa dan tren industri, prosesnya menjadi lebih cepat dan relevan.
+              Untuk menjawab tantangan ini, saya mengusulkan <span className="font-bold text-green-700 dark:text-green-400">&ldquo;Kurikulum Canvas Dinamis&rdquo;</span>. Ini adalah platform visual berbasis Gemini tempat dosen dan pimpinan prodi berkolaborasi merancang kurikulum. Dibantu AI yang menganalisis feedback mahasiswa dan tren industri, prosesnya menjadi lebih cepat dan relevan.
             </p>
             
             {/* Visual Feature Cards */}
